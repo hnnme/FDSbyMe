@@ -1,0 +1,457 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
+
+/*
+연한회색: color: #707070;
+진한검정:   color:#333333;*/
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+.header, .intro, .content01,
+.content02, .portfolio, .contact, .footer{
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 150px;
+  box-sizing: border-box;
+}
+.features, .crew{
+  background: #fcfcfc;
+  margin: 0;
+  width: auto;
+}
+/*버튼 default*/
+button{
+  border: none;
+  border-radius: 5px;
+}
+a:link, a:visited{
+  text-decoration: none;
+  color: #707070;
+}
+
+.header{
+  height: 101px;
+  /*background: red;*/
+  padding-top: 85px;
+}
+.header .logo{
+  background: url(../images/header/Logo.png) no-repeat;
+  width: 70px;
+  height: 0;
+  padding-top: 21px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.menu-list{
+  list-style: none;
+  float: left;
+  margin-left: 99px;
+  color: #707070;
+}
+.menu-list li{
+  display: inline-block;
+  font-weight: 500;
+  padding-left: 10px;
+  vertical-align: middle;
+}
+.header-btns .login{
+  border-radius: 0;
+  color: #707070;
+  background: #fff;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+.header-btns .signup{
+  border: 1px solid #03a67b;
+  width: 125px;
+  height: 38px;
+  background: #fff;
+  color: #03a67b;
+}
+.header-btns{
+  float: right;
+}
+
+.intro{
+  height: 699px;
+  padding-top: 137px;
+  position: relative;
+}
+.intro-heading{
+  font-size: 3.7em;
+  letter-spacing: -2px;
+  color:#333333;
+  text-align: center;
+}
+.intro-about{
+  color: #707070;
+  padding: 0 183px;
+  text-align: center;
+  margin-bottom: 75px;
+}
+.kit-example .kit-about01,
+.kit-example .kit-about02{
+  background: #03a67b;
+  border-radius: 5px;
+  color: #fff;
+  width: 342px;
+  padding: 20px 25px;
+  box-sizing: border-box;
+  position: absolute;
+}
+.kit-example .kit-about01{
+  z-index: 4;
+  top: 369px;
+  left: 305px;
+}
+.kit-example .kit-about02{
+  z-index: 5;
+  top: 499px;
+  right: 273px;
+}
+
+.kit-example img{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -128.5px;
+}
+/*컨텐츠 01*/
+.content01{
+  height: 600px;
+  background: #fff;
+  position: relative;
+}
+.content01 article{
+  padding-top: 100px;
+}
+.content01 .item-title,
+.content02 .item-title{
+  font-size: 3.1em;
+  color:#333333;
+  font-weight: 600;
+  letter-spacing: -2px;
+  position: absolute;
+}
+.content01 .item-title{
+  top: 232px;
+  left: 835px;
+}
+.content01 .num,
+.content02 .num{
+  font-size: 12.8em;
+  color: #efefef;
+  position: absolute;
+  font-weight: bolder;
+}
+.content01 .num{
+  top: 136px;
+  right: 437px;
+}
+.content01 .item-about,
+.content02 .item-about{
+  position: absolute;
+  width: 426px;
+}
+.content01 .item-about{
+  top: 293px;
+  left: 835px;
+}
+
+.content02{
+  height: 600px;
+  position: relative;
+}
+.content02 .item-title{
+  top: 232px;
+  left: 151px;
+}
+.content02 .num{
+  top: 136px;
+  left: 150px;
+  letter-spacing: -2px;
+}
+.content02 .item-about{
+  top: 293px;
+  left: 152px;
+}
+.content02 img{
+  top: 100px;
+  right: 150px;
+  position: absolute;
+}
+
+.features{
+  height: 700px;
+  padding-top: 103px;
+  padding-left: 150px;
+}
+.features-heading{
+  color:#333333;
+  font-size: 3.14em;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+.features-about{
+  color: #707070;
+  font-size: 1.1em;
+  width: 685px;
+}
+.features-list{
+  padding-top: 58px;
+  list-style: none;
+}
+.features-list li{
+  width: 346px;
+  height: 140px;
+  display: inline-block;
+  position: relative;
+  padding-left: 171px;
+  margin-bottom: 52px;
+  margin-right: 62px;
+}
+.features-list .order::before{
+  content:"";
+  background: url(../images/features/check.png) no-repeat 50% 50%;
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.features-list .order{
+  display: inline-block;
+  padding: 19px 0 15px 0;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.features-list .order-about{
+  font-size: 1.1em;
+  color: #707070;
+  line-height: 1.2;
+}
+/*포트폴리오*/
+.portfolio{
+  height: 732px;
+  padding-top: 99px;
+  position: relative;
+}
+.portfolio-heading{
+  text-align: center;
+  font-weight: 600;
+  font-size: 3.1em;
+  color: #333;
+  letter-spacing: -2px;
+}
+.portfolio-about{
+  color: #707070;
+  font-size: 1.1em;
+  padding: 0 228px;
+  text-align: center;
+  margin-bottom: 55px;
+}
+.portfolio-list{
+  list-style: none;
+}
+.portfolio-list li{
+  float:left;
+  width: 340px;
+  padding-top: 220px;
+  margin-right: 46px;
+  position: relative;
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.04);
+}
+.portfolio-list li:last-child{
+  margin-right: 0;
+}
+.portfolio-list .num{
+  text-transform: uppercase;
+  color: #333;
+  letter-spacing: 2px;
+  font-weight: 600;
+  text-align: center;
+  display: block;
+}
+.portfolio-list .project-name{
+  color: #cccccc;
+  text-align: center;
+  display: block;
+}
+.portfolio-list .project-about{
+  color: #707070;
+  text-align: center;
+  padding: 0 64px 35px 64px;
+}
+.portfolio-list img{
+  position: absolute;
+  top: 0;
+}
+.portfolio-btns .left,
+.portfolio-btns .right{
+  position: absolute;
+  top: 60%;
+  width: 20px;
+  height: 0;
+  padding-top: 38px;
+  overflow: hidden;
+}
+.portfolio-btns .left{
+  left: 100px;
+  background: url(../images/portfolio/Arrow-Left.png) no-repeat;
+}
+.portfolio-btns .right{
+  position: absolute;
+  top: 60%;
+  right: 110px;
+  background: url(../images/portfolio/Arrow-Right.png) no-repeat;
+}
+
+/*맴버*/
+.crew{
+  height: 613px;
+  padding: 101px 150px 0 150px;
+}
+.crew-heading{
+  color: #333;
+  font-weight: 600;
+  font-size: 3.14em;
+  letter-spacing: -2px;
+  text-align: center;
+  margin-bottom: 72px;
+}
+.crew-list, .social-list{
+  list-style: none;
+}
+.crew-list>li{
+  display: inline-block;
+  width: 270px;
+  height: 350px;
+  background: #fff;
+  margin-right: 20px;
+  box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.04);
+}
+.crew-list>li:last-child{
+  margin-right: 0;
+}
+.crew-list>li>img{
+  padding: 48px 82px 31px 82px;
+}
+.crew-name,.crew-position{
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.crew-name{
+  padding: 0 86px;
+  color: #333;
+}
+.crew-position{
+  padding: 0 117px;
+  color: #707070;
+}
+.social-list{
+  padding: 15px 100px;
+}
+.social-list li{
+  display: inline-block;
+  margin-right: 3px;
+
+}
+.social-list a{
+  display: inline-block;
+  width: 17px;
+  height: 0;
+  padding-top: 17px;
+  overflow: hidden;
+}
+.social-list .slack{
+  background: url(../images/crew/Slack.png) no-repeat 50% 50%;
+}
+.social-list .twitter{
+  background: url(../images/crew/Twitter.png) no-repeat 50% 50%;
+}
+.social-list .facebook{
+  background: url(../images/crew/Facebook.png) no-repeat 50% 50%;
+}
+
+.contact{
+  height: 420px;
+  padding-top: 102px;
+}
+.contact-heading{
+  color:#333333;
+  font-size: 3.14em;
+  font-weight: 600;
+  letter-spacing: -2px;
+  padding: 0 450px;
+}
+.contact-about{
+  color:#707070;
+  font-size: 1.1em;
+  width: 278px;
+  padding: 0 440px;
+  text-align: center;
+  margin-bottom: 29px;
+}
+.social-btns{
+  padding: 0 496px;
+}
+.social-btns>button{
+  width: 40px;
+  height: 0;
+  padding-top: 40px;
+  overflow: hidden;
+  margin-right: 6px;
+}
+.contact-slack{
+  background: url(../images/contact/sl.png) no-repeat;
+}
+.contact-twitter{
+  background: url(../images/contact/tw.png) no-repeat;
+}
+.contact-facebook{
+  background: url(../images/contact/fb.png) no-repeat;
+  margin-right: 0;
+}
+.footer{
+  height: 311px;
+  padding-top: 84px;
+  display: flex;
+  justify-content: space-around;
+}
+.footer-logo{
+  margin-right: 78px;
+}
+.logo-link{
+  margin-bottom: 29px;
+}
+.footer-about{
+  color: #707070;
+  font-size: 1.1em;
+  width: 273px;
+}
+.footer-guidelist, .small-list{
+  list-style: none;
+}
+.footer-guidelist>li{
+  display: inline-block;
+  margin-right: 150px;
+  vertical-align: top;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: 600;
+  /*letter-spacing: 2px;*/
+}
+.small-list{
+  color: #707070;
+  font-weight: 400;
+}

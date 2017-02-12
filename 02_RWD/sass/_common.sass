@@ -1,0 +1,69 @@
+
+// 기본 컬러 정의
+$logo-pink: #f8d2c5
+$logo-strong-pink: #f3987b
+$menu-hover: #ea9478
+$pale-salmon: #feb29a
+$logo-black: #4d4b4a
+$article-font-color: #5a5e65
+$picture-grey: #dadee8
+$logo-footer: #d6d2d1
+$white: #ffffff
+
+// 폰트 기본 값
+$font-s: 16px
+$font-m: 20px
+$font-l: 25px
+
+// 가로 폭 기본 값
+$screen-size: 480px
+// 총 가로폭 디바이스별 고정값
+$screen-mobile: 480px
+$screen-tablet: 760px
+$screen-desktop: 1200px
+
+// 디바이스에 따른 컬럼 값
+$column-mobile: 4
+$column-tablet: 8
+$column-desktop: 12
+
+// gutter 설정
+$gutter: 20px
+
+// 가로폭 디바이스별 값
+$grid-mobile: 90px
+$grid-tablet: 75px
+$grid-desktop: 80px
+
+// 행간 값
+$baseline: 24
+
+
+
+// 링크 초기화
+%set-anchor
+  text-decoration: none
+
+// 리스트 초기화
+%set-list
+  list-style: none
+// 요소 초기화
+%reset-element
+  outline: 0
+  margin: 0
+  padding: 0
+  border: 0
+
+// 페이지 초기화
+%reset-space
+  %reset-element
+  margin-left: auto
+  margin-right: auto
+  width: $screen-size
+  box-sizing: border-box
+//width값을 screen-size라는 이름으로 유동적이게 변수로 만들어보기
+
+// 해딩 초기화
+%hidden
+  position: absolute
+  left: -999em

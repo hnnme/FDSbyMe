@@ -1,0 +1,32 @@
+// 폰트 사이즈 em단위로 바꿔줌
+@mixin set-font-size($font-size){
+  font-size: change-font-em($font-size);
+}
+
+
+
+
+// 컬럼 정의
+@mixin set-column($column, $column-width,$page-width){
+  @for $i from 1 through $column{
+    .col-$i{
+      width: percentage($column-width*$i/$page-width);
+    }
+  }
+}
+
+//calc( (100% / 2) * 1 );
+
+@mixin vertical-grid($num-of-col, $col-width, $gutter) {
+$color-gutter: hsla(14, 100, 50, 0.5);
+$color-column: hsla(200, 100, 50, 0.5);
+$col-base-gutter: $gutter+$col-width;
+$col-base: $col-width + $gutter * 2;
+background: linear-gradient(90deg,
+       $color-gutter percentage($gutter/$col-base),
+       $color-column percentage($gutter/$col-base),
+       $color-column percentage($col-base-gutter/$col-base),
+       $color-gutter percentage($col-base-gutter/$col-base),
+       $color-gutter 100%);
+background-size: percentage(1/$num-of-col);
+}

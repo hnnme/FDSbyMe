@@ -1,0 +1,418 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+.header, .intro, .preview,
+.result, .look, .stories, .team,
+.footer{
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 150px;
+  box-sizing: border-box;
+}
+.preview, .look, .team{
+  background: #fcfcfc;
+  margin: 0;
+  width: auto;
+}
+.hidden,legend{
+  position: absolute;
+  left: -999em;
+}
+/*진한 검정*/
+.slide-heading, .look-heading,
+.stories-heading, .stories .item-title,
+.team-heading, .team-list .member-name,
+.footer-contact>span, .footer-subscribe span{
+  color: #333333;
+}
+.preview-about, .result-about,
+.look-about, .look-list>li>p,
+.stories .item-about, .stories-about,
+.team-list .member-about, .team-about{
+  color: #707070;
+}
+
+.wrapper{
+
+}
+/*헤더 파트*/
+.header{
+  height: 101px;
+  padding-top: 80px;
+}
+.header .logo{
+  background: url(../images/header/Logo.png) no-repeat;
+  width: 70px;
+  height: 0;
+  padding-top: 21px;
+  overflow: hidden;
+  display: inline-block;
+}
+.header .menu{
+  list-style: none;
+  display: inline-block;
+  float: right;
+}
+.header .menu li,
+.header .menu a{
+  display: inline-block;
+}
+.header .menu a{
+  font-weight: 500;
+  padding: 5px 0 5px 10px;
+}
+/*링크 부분*/
+.header .menu a:link,
+.header .menu a:visited{
+  text-decoration: none;
+  color: #474747;
+}
+/*인트로 부분*/
+.intro{
+  height: 699px;
+  position: relative;
+}
+.introSlide-list{
+  list-style: none;
+}
+.introSlide-list li{
+  padding-top: 201px;
+}
+.slide-heading{
+  font-size: 3.14em;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+.intro-description{
+  padding-top: 35px;
+  width: 489px;
+  padding-bottom: 36px;
+  color: #707070;
+  font-weight: 1.14em;
+}
+.intro-btn{
+  width: 200px;
+  height: 50px;
+  text-transform: uppercase;
+  color: #fff;
+  background: #03a67b;
+  border: 1px solid #03a67b;
+  border-radius: 5px;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+.intro-controlls{
+  display: flex;
+  flex-flow: column;
+  position: absolute;
+  top: 50%;
+  right: 77px;
+}
+.intro-controlls button{
+  background: #fff url(../images/intro/Dot.png) no-repeat 50% 50%;
+  width: 10px;
+  height: 0px;
+  padding-top: 10px;
+  overflow: hidden;
+  border: none;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.intro-controlls .on{
+  background: #fff url(../images/intro/Active-Dot.png) no-repeat;
+  width: 10px;
+  height: 0;
+  padding-top: 10px;
+}
+/*미리보기 부분*/
+.preview{
+  height: 600px;
+  position: relative;
+}
+.preview-heading{
+  padding-top: 232px;
+  font-size: 3.14em;
+  font-weight: 600;
+  letter-spacing: -1px;
+  color: #333333;
+}
+.preview-about{
+  font-size: 1.14em;
+  width: 426px;
+}
+.preview-src{
+  position: absolute;
+  top: 100px;
+  right: 150px;
+}
+.preview-src video{
+  width: 560px;
+  height: 400px;
+}
+.preview-btn{
+  background: url(../images/preview/Play-Button.png) no-repeat 50% 50%;
+  width: 560px;
+  height: 0;
+  padding-top: 400px;
+  overflow: hidden;
+  border: none;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+}
+/*결과 부분*/
+.result{
+  height: 330px;
+  /*background: lime;*/
+}
+.result-list{
+  list-style: none;
+}
+.result-list li{
+  display: inline-block;
+  width: 213px;
+  text-align: center;
+  padding: 90px 28px;
+}
+.result-num{
+  color: #03a67b;
+  font-size: 55px;
+  font-weight: bold;
+  letter-spacing: -2px;
+  line-height: 55px;
+  padding-bottom: 20px;
+}
+.result-part{
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-bottom: 22px;
+}
+.result-about{
+  height: 65px;
+  padding-bottom: 86px;
+}
+
+/*look 부분*/
+.look{
+  height: 630px;
+}
+.look-heading{
+  font-size: 3.14em;
+  font-weight: 600;
+  letter-spacing: -2px;
+  text-align: center;
+  padding-top: 99px;
+}
+.look-about{
+  width: 685px;
+  display: inline-block;
+  padding: 0 228px;
+  text-align: center;
+}
+.look-list{
+  margin-top: 68px;
+  position: relative;
+}
+.look-list li::before{
+  content:"";
+  background: url(../images/look/Icon.png) no-repeat;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 10%;
+}
+.look-list li{
+  width: 312px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 139px;
+  padding: 139px 37.5px 0 37.5px;
+  overflow: hidden;
+}
+.look-list li:last-child{
+  padding-right: 0;
+}
+.look-list li{
+  float:left;
+}
+.look-list li,
+.look-list p{
+}
+.look-list p{
+  text-transform: none;
+}
+/*story 부분*/
+.stories{
+  height: 734px;
+}
+.stories-heading{
+  font-size: 3.14em;
+  font-weight: 600;
+  letter-spacing: -2px;
+  line-height: 44px;
+  text-align: center;
+  padding: 100px 0 25px 0;
+}
+.stories-about{
+  display: inline-block;
+  width: 685px;
+  padding: 0 228px;
+  text-align: center;
+}
+.stories-list{
+  padding-top: 66px;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+.stories-list li{
+  width: 335px;
+  display: inline-block;
+  text-align: center;
+}
+.stories-list .item-title{
+  padding-top: 30px;
+  padding-bottom: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+  width: 208px;
+  margin-left: 57px;
+}
+/*팀 부분*/
+.team{
+  height: 888px;
+}
+.team-heading{
+  font-size: 3.14em;
+  padding-top: 104px;
+  text-align: center;
+}
+.team-about{
+  padding: 0 227px;
+  text-align: center;
+  padding-bottom: 66px;
+}
+.team-list{
+  list-style: none;
+}
+.team-list li{
+  display: inline-block;
+  position: relative;
+}
+.member-02{
+  background: #e8e8e8;
+  width: 367px;
+  height: 250px;
+  border-radius: 5px;
+}
+.member-02 img{
+  display: none;
+}
+.member-02 .member-name,
+.member-02 .member-about{
+  position: absolute;
+}
+.member-name{
+  top: 66px;
+  left: 133px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.member-about{
+  top: 102px;
+  left: 53px;
+  width: 257px;
+  text-align: center;
+  font-size: 1.14em;
+}
+
+/*푸터*/
+.footer{
+  height: 294px;
+}
+.footer-list{
+  padding-top: 60px;
+  list-style: none;
+  display: flex;
+}
+.footer-list li{
+  display: inline-block;
+  margin-right: 74px;
+}
+
+.footer-blokk{
+}
+.footer-logo{
+  margin-bottom: 25px;
+  display: inline-block;
+}
+.footer-blokk .blokk-about{
+  width: 312px;
+  color: #707070;
+  font-size: 1.14em;
+  line-height: 1.5;
+}
+/*contact*/
+.footer-contact{
+}
+.footer-contact address{
+  width: 312px;
+  color: #707070;
+  font-size: 1.14em;
+  font-style: normal;
+  line-height: 1.5;
+}
+.footer-contact span{
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #333333;
+  padding-bottom: 26px;
+  display: inline-block;
+}
+/*subscribe*/
+.footer-subscribe{
+}
+.footer-subscribe span{
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #333333;
+  padding-bottom: 26px;
+  display: inline-block;
+}
+.footer-subscribe p{
+  color: #707070;
+  font-size: 1.14em;
+  width: 213px;
+  line-height: 1.5;
+}
+.footer-subscribe fieldset{
+  border: none;
+  position: relative;
+}
+.footer-subscribe #user-email{
+  width: 312px;
+  height: 42px;
+  border: none;
+  text-indent: 10px;
+  background: #e8e8e8;
+}
+.footer-subscribe .btn-subscribe{
+  position: absolute;
+  width: 55px;
+  height: 0;
+  padding-top: 42px;
+  overflow: hidden;
+  border: none;
+  background: url(../images/footer/Button.png) no-repeat;
+  top: 0;
+  right: 0;
+}

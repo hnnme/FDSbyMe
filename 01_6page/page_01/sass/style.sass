@@ -1,0 +1,224 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700')
+@import modules/base
+@import modules/normalize
+@import partials/header
+
+html
+  @extend %font-reg
+
+
+body
+  @extend %font
+
+
+.wrapper
+  background: #fff
+
+.header
+  height: 38px
+  position: relative
+  margin-top: 71px
+  @extend %page-base
+
+.logo
+  background: url(../images/menu/Logo.png) no-repeat
+  position: absolute
+  width: 70px
+  height: 0
+  padding-top: 21px
+  overflow: hidden
+  top: 9px
+  left: 0
+
+.navigation-list
+  padding-left: 99px
+  @extend %font-medium
+  @extend %rm_anchorUnbar
+  & li,& a
+    display: inline-block
+    padding: 3.5px 3px
+
+.member
+  position: absolute
+  top: 7px
+  right: 0
+  @extend %font-medium
+
+.login
+  @extend %member_btnBody
+.signup
+  border: 2px solid $green
+  border-radius: 5px
+  @extend %member_btnBody
+  color: $green !important
+
+$four: 4
+=set-border-radius($num)
+  border-radius: $num
+
+// page02 - intro
+.intro
+  height: 699px
+  position: relative
+  @extend %page-base
+  &-part
+    padding-top: 236px
+  &-heading
+    font-size: 3.7em
+    display: inline-block
+    width: 501px
+    line-height: 1.115
+    @extend %font-semiBold
+    @extend %font-nSpace
+  &-summary
+    width: 528px
+    @extend %font-16
+  &-img
+    position: absolute
+    top: 50%
+    margin-top: -273px
+    right: 127.9px
+  &-part form
+    padding-top: 36px
+  &-part fieldset
+    border: none
+  &-part input
+    background: #f5f5f5
+    border: none
+    +set-border-radius(4px 0 0 4px)
+    height: 50px
+    width: 289px
+    text-indent: $four*6
+  &-btn
+    border: none
+    width: 200px
+    height: 50px
+    margin-left: -$four
+    color: #fff
+    background: $green
+    +set-border-radius(0 4px 4px 0)
+    letter-spacing: 2px
+    font-size: 0.8em
+    @extend %font-semiBold
+    cursor: pointer
+
+// page03 - features
+.features
+  height: 564px
+  @extend %page-base
+  &-part
+    text-align: center
+  &-heading
+    font-size: 3.14em
+    line-height: 44px
+    font-weight: 600
+    letter-spacing: -2px
+  &-describtion
+    font-size: 1.1em
+    display: inline-block
+    width: 685px
+    margin: 25px 0 66px 0
+  &-list
+     display: flex
+     justify-content: space-between
+  &-list p
+    @extend %font-17
+    @extend %font-regular
+
+
+
+.preview
+  height: 720px
+  @extend %page-base
+  &-part
+    padding:
+      top: 113px
+      right: 245px
+      bottom: 0
+      left: 245px
+    text-align: center
+  &-heading
+    font-size: 44px
+    line-height: 44px
+    @extend %font-semiBold
+    @extend %font-nSpace
+  &-media
+    position: relative
+    margin-top: 41px
+  &-part &-btn
+    background: url(../images/preview/Play-Button.png) no-repeat
+    border: none
+    position: absolute
+    top: 50%
+    right: 50%
+    margin: -52px -52px 0 0
+    width: 104px
+    height: 104px
+    text-indent: 105px
+    white-space: nowrap
+    overflow: hidden
+    cursor: pointer
+
+// page04 - try
+.try
+  height: 402px
+  @extend %page-base
+
+.try-part
+  padding:
+    top: 105px
+    right: 295px
+    bottom: 0
+    left: 295px
+  text-align: center
+
+.try-heading
+  font
+    weight: 600
+    size: 3.14em
+  line-height: 43px
+  @extend %font-nSpace
+
+.try-detail
+  font-size: 1.14em
+  display: inline-block
+  width: 550px
+
+.try-btns
+  margin-top: 26px
+
+.try-btns .version-01
+  @extend %btn_try
+  margin-right: 15px
+
+.try-btns .version-02
+  @extend %btn_try
+
+
+// page05 - clients
+.clients
+  background: skyblue
+  height: 614px
+  @extend %page-base
+
+.footer
+  background: blue
+  height: 151px
+  @extend %page-base
+
+=set-social($name, $x:0, $y:0)
+  background: url(../images/footer/#{$name}.png) no-repeat $x $y
+
+$social: social-item0
+.#{$social}1 a
+  +set-social(facebook, $x:50%)
+
+.#{$social}2 a
+  +set-social(Dribbble)
+
+.#{$social}3 a
+  +set-social(Google-Plus)
+
+.#{$social}4 a
+  +set-social(Instagram)

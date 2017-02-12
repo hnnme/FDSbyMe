@@ -1,0 +1,473 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
+/*
+[[ popins폰트 ]]
+regular: 400
+medium: 500
+semi-bold : 600
+*/
+
+/*공통부분*/
+body{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+  background: #fff;
+}
+.header, .intro, .play,
+.features, .gallery, .store,
+.footer{
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 150px;
+  box-sizing: border-box;
+}
+/*색깔 공통 부분*/
+/*진한 회색*/
+.intro-heading, .lang-btns,
+.features-heading, .gallery-heading,
+.store-heading{
+  color: #333333;
+}
+/*옅은 회색*/
+.intro-about, .features-about,
+.features-list p, .store-list .address,
+.footer address{
+  color: #858585;
+}
+/*녹색*/
+.btn-eng, .intro-play,
+.features-list .item-01,
+.features-list .item-02,
+.features-list .item-03,
+.features-list .item-04,
+.store-list .branch{
+  color: #03a67b;
+}
+
+/*헤더 부분*/
+.header{
+  padding-top: 80px;
+  height: 101px;
+  position: relative;
+}
+.logo{
+  background: url(../images/header/Logo.png) no-repeat;
+  display: inline-block;
+  width: 70px;
+  height: 0;
+  padding-top: 21px;
+  overflow: hidden;
+}
+.lang-btns{
+  float:right;
+  margin-right: 50px;
+}
+.btn-eng, .btn-de{
+  border: none;
+  font-weight: 500;
+  background: #fff;
+  cursor: pointer;
+  padding: 4px 0;
+}
+.btn-de{
+  padding-right: 4px;
+}
+.btn-eng::after{
+  content: "/";
+  color: grey;
+  margin: 0 4px;
+  display: inline-block;
+}
+.menu{
+  background: url(../images/header/menu-Icon.png) no-repeat 0 50%;
+  position: absolute;
+  width: 22px;
+  height: 0;
+  padding-top: 22px;
+  overflow: hidden;
+  top: 100%;
+  margin-top: -22px;
+  right: 150px;
+  cursor: pointer;
+}
+/*인트로 부분*/
+.intro{
+  height: 699px;
+}
+.intro-heading{
+  font-size: 3.7em;
+  line-height: 44px;
+  letter-spacing: -2px;
+  text-align: center;
+  padding: 145px 0 35px 0;
+}
+.intro-about{
+  font-size: 1.14em;
+  text-align: center;
+  width: 774px;
+  padding: 0 158px;
+  margin-bottom: 36px;
+}
+.intro-src{
+  position: relative;
+  padding: 0 150px;
+}
+.intro-play::before{
+  content:"";
+}
+.intro-play{
+  width: 200px;
+  height: 50px;
+  border: 1px solid #03a67b;
+  border-radius: 5px;
+  font-size: 0.85em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  text-indent: 20px;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  margin-left:-100px;
+  background: #fff url(../images/intro/play-sign.png) no-repeat 0 -2px;
+}
+.intro-src img{
+  margin-top: 88px;
+}
+/*플레이 부분*/
+.play{
+  background: #03a67b;
+  width: auto;
+  height: 460px;
+  margin: 0;
+  padding: 0;
+}
+.play-part{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.play-heading{
+  position: absolute;
+  left: -999em;
+}
+.play-btn{
+  width:108px;
+  height: 0;
+  padding-top: 104px;
+  overflow: hidden;
+  border: 0;
+  background: url(../images/play/Play-Button.png) no-repeat 3px 0;
+  margin-top: 136px;
+  cursor: pointer;
+}
+.play-about{
+  margin-top: 34px;
+  width: 527px;
+  color: #fff;
+  font-size: 1.14em;
+  text-align: center;
+}
+/*features부분*/
+.features{
+  height: 860px;
+  padding-top: 104px;
+}
+.features-heading{
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: -2px;
+}
+.features-about{
+  text-align: center;
+  width: 685px;
+  padding: 25px 228px 0 228px;
+  font-size: 1.14em;
+}
+.features-detail{
+  position: relative;
+  margin-top: 51px;
+  padding: 0px 137px;
+}
+.features-detail img{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -125px;
+}
+.features-list{
+  padding-top: 109px;
+}
+.features-list .item-01,
+.features-list .item-02,
+.features-list .item-03,
+.features-list .item-04{
+  text-align: center;
+  width: 247px;
+  font-weight: 600;
+  font-size: 0.85em;
+  overflow: hidden;
+  letter-spacing: 2px;
+}
+
+.features-list .item-01,
+.features-list .item-02{
+  float: left;
+}
+.features-list .item-02{
+  position: absolute;
+  top: 269px;
+  width: 228px;
+}
+.features-list .item-03,
+.features-list .item-04{
+  float: right;
+}
+.features-list .item-03{
+  width: 186px;
+  padding-right: 61px;
+}
+.features-list .item-04{
+  position: absolute;
+  top: 269px;
+  right: 175px;
+  width: 228px;
+}
+.features-list p{
+  padding-top: 27px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0px;
+}
+.features::after{
+  content:"";
+  clear: both;
+  display: block;
+}
+
+/*갤러리 부분*/
+.gallery{
+  height: 555px;
+  padding: 0 49px;
+  margin: 0;
+  width: auto;
+  background: #fcfcfc;
+}
+.gallery-part{
+  padding-top: 102px;
+  position: relative;
+}
+.gallery-heading{
+  font-size: 3.14em;
+  line-height: 44px;
+  text-align: center;
+  letter-spacing: -2px;
+}
+.gallery-list{
+  margin-top: 58px;
+  list-style: none;
+  display: inline-block;
+  margin-left: 111px;
+}
+
+.gallery-list li{
+  display: inline-block;
+  padding-right: 39px;
+}
+.gallery-list li:last-child{
+  padding-right:0px;
+}
+.gallery-controlls{
+  position: absolute;
+  top: 65%;
+  width:1342px;
+}
+.before-btn, .after-btn{
+  border: 0;
+  width: 78px;
+  height: 0;
+  padding-top: 78px;
+  overflow: hidden;
+  cursor: pointer;
+}
+.before-btn{
+  background: url(../images/gallery/arr-circle-left.png) no-repeat;
+  float: left;
+}
+.after-btn{
+  background: url(../images/gallery/arr-circle-right.png) no-repeat;
+  float: right;
+}
+/*store부분*/
+.store{
+  height: 838px;
+}
+.store-part{
+  padding: 0 32px;
+}
+.store-heading{
+  padding-top: 100px;
+  font-size: 3.14em;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: -2px;
+  text-align: center;
+  margin-bottom: 58px;
+}
+.store-list{
+  background: url(../images/store/Map.png) no-repeat;
+  width: 1076px;
+  height: 579px;
+  list-style: none;
+  position: relative;
+}
+/*마커 : default*/
+.store-list li{
+  position: absolute;
+  background: url(../images/store/Marker.png) no-repeat;
+  width: 24px;
+  height: 38px;
+  cursor: pointer;
+}
+/*마커들 위치*/
+.store-list .no1{
+  top: 124px;
+  left: 133px;
+}
+.store-list .no2{
+  top: 364px;
+  left: 321px;
+}
+.store-list .no3{
+  top: 51px;
+  left: 377px;
+}
+.store-list .no4{
+  top: 228px;
+  left: 594px;
+}
+.store-list .no5{
+  top: 110px;
+  left: 696px;
+}
+.store-list .no6{
+  top: 281px;
+  right: 197px;
+}
+.store-list .no7{
+  top: 401px;
+  right: 115px;
+}
+.store-list .active{
+  display: block;
+}
+.store-list li address{
+  background: url(../images/store/Base.png) no-repeat -16px -13.5px;
+  position: absolute;
+  width: 362px;
+  height: 161px;
+  top: -170px;
+  left: -170px;
+  display: none;
+}
+/*마커 위 정보부분 : default*/
+.store-list .branch,
+.store-list .address{
+  position: absolute;
+  font-size: 1.14em;
+}
+.store-list .branch{
+  top: 28px;
+  left: 95px;
+  font-weight: 600;
+  line-height: 16px;
+}
+.store-list .address{
+  width: 282px;
+  height: 65px;
+  top: 57px;
+  left: 42px;
+  text-align: center;
+}
+/*footer 부분*/
+.footer{
+  height: 224px;
+  padding-top: 60px;
+  position: relative;
+}
+.footer-logo{
+  display: block;
+}
+.footer address{
+  width: 312px;
+  display: inline-block;
+  font-size: 1.14em;
+  margin-top: 25px;
+}
+.siteMap-list,
+.socialContents-list{
+  list-style: none;
+}
+.siteMap-list{
+  position: absolute;
+  top: 69px;
+  left: 872px;
+  width: 418px;
+  display: flex;
+  justify-content: space-between;
+}
+.siteMap-list a{
+  color: #333333;
+  font-weight: 500;
+  padding: 5px 0 10px 5px;
+}
+.siteMap-list li,
+.siteMap-list a,
+.socialContents-list li,
+.socialContents-list a{
+  display: inline-block;
+  text-decoration: none;
+}
+.socialContents-list{
+  float: right;
+  margin-top: 27px;
+}
+.socialContents-list li{
+  width: 20px;
+  height: 18px;
+  padding-left: 5px;
+}
+.socialContents-list a{
+  width: 20px;
+  height: 0px;
+  padding-top: 18px;
+  overflow: hidden;
+  vertical-align: center;
+}
+
+.slack{
+  background: url(../images/social/Slack.png) no-repeat 40% 0;
+}
+.twitter{
+  background: url(../images/social/Twitter.png) no-repeat;
+}
+.facebook{
+  background: url(../images/social/Facebook.png) no-repeat 40% 0;
+}
+.dribbble{
+  background: url(../images/social/Dribbble.png) no-repeat;
+}
+.google{
+  background: url(../images/social/Google-Plus.png) no-repeat;
+}
+.instagram{
+  background: url(../images/social/Instagram.png) no-repeat;
+}

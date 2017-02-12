@@ -1,0 +1,7 @@
+
+@function remove-unit($unit)
+  @return $unit/($unit*0+1)
+
+
+@function change-font-em($px, $default:16px)
+  @return (remove-unit($px)/remove-unit($default))*1em

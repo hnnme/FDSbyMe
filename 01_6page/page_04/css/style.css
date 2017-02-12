@@ -1,0 +1,413 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600');
+
+html,body,div,header,nav,section,aside,article,footer,figure,figcaption,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,fieldset{
+	margin: 0;
+	padding: 0;
+}
+
+html{
+  font-family: 'Poppins', sans-serif;
+  font-size: 14px;
+}
+.header, .intro, .products,
+.services, .blog, .touch, .footer{
+  width: 1440px;
+  padding: 0 150px;
+  box-sizing: border-box;
+}
+.products, .blog, .touch, .footer{
+  margin: 0 auto;
+}
+.header, .intro, .services{
+  margin: 0;
+  width: auto;
+}
+fieldset{
+  border: 0;
+}
+label{
+  position: absolute;
+  left: -999em;
+}
+/*헤더부분*/
+.header{
+  background: #03a67b;
+  height: 101px;
+  position: relative;
+  padding-top: 80px;
+}
+.header .logo{
+  background: url(../images/intro/Logo.png) no-repeat;
+  width: 70px;
+  height: 0;
+  padding-top: 21px;
+  overflow: hidden;
+}
+.menu{
+  background: url(../images/intro/Icon.png) no-repeat;
+  width: 22px;
+  height: 0;
+  padding-top: 14px;
+  overflow: hidden;
+  position: absolute;
+  top: 80px;
+  right: 150px;
+  cursor: pointer;
+}
+/*인트로 부분*/
+.intro{
+  background: #03a67b;
+  height: 699px;
+  padding-top: 145px;
+  position: relative;
+}
+.intro-heading{
+  font-size: 3.7em;
+  color: #fff;
+  text-align: center;
+  letter-spacing: -2px;
+  line-height: 52px;
+  margin-bottom: 35px;
+}
+.intro-about{
+  color: #fff;
+  padding: 0 154px;
+  text-align: center;
+  margin-bottom: 46px;
+}
+.intro-btn{
+  width: 200px;
+  height: 50px;
+  background: #fff;
+  color: #03a67b;
+  border-radius: 5px;
+  border: 1px solid #03a67b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+  font-size: 0.8em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+  cursor: pointer;
+}
+.intro-list{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 170px;
+  list-style: none;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #fff;
+}
+.intro-list>li{
+  color: #fff;
+  text-transform: uppercase;
+  width: 351px;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+.intro-list li p{
+  margin-top: 27px;
+  text-transform: none;
+  font-weight: 400;
+  font-size: 1em;
+}
+/*product 부분*/
+.products{
+  position: relative;
+  height: 868px;
+}
+.products-heading{
+  font-size: 3.1em;
+  color: #333;
+  letter-spacing: -2px;
+  text-align: center;
+  padding: 102px 0 70px 0;
+}
+.products-list{
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+.products-list li{
+  position: relative;
+}
+.products-list .price{
+  position: absolute;
+  top: 39px;
+  left: 39px;
+  font-weight: 600;
+  font-size: 2em;
+  color: #696969;
+  letter-spacing: -2px;
+}
+.products-list .category,
+.products-list .item-name{
+  display: block;
+}
+.products-list .category{
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #03a67b;
+  margin-top: 20px;
+  padding: 0 229px;
+  line-height: 14px;
+}
+.products-list .item-name{
+  font-size: 2em;
+  font-weight: 600;
+  padding: 0 181px;
+  letter-spacing: -2px;
+  line-height: 32.5px;
+}
+.products-btns .before,
+.products-btns .after{
+  width: 20px;
+  height: 0;
+  padding-top: 38px;
+  position: absolute;
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+.products-btns .before{
+  background: #fff url(../images/products/Arrow-Left.png) no-repeat;
+  top: 50%;
+  left: 80px;
+}
+.products-btns .after{
+  background: #fff url(../images/products/Arrow-Right.png) no-repeat;
+  top: 50%;
+  right: 80px;
+}
+.products-page{
+  margin-top: 50px;
+  padding: 0 544px;
+}
+.products-page button{
+  background: #fff url(../images/products/Dot.png) no-repeat 50% 50%;
+  width: 10px;
+  height: 0;
+  padding-top: 10px;
+  overflow: hidden;
+  border: 0;
+}
+.products-page .active{
+  background: url(../images/products/Active-Dot.png) no-repeat 50% 50%;
+}
+/*서비스 부분*/
+.services{
+  height: 723px;
+  background: #fcfcfc;
+}
+.services-heading{
+  font-size: 3.1em;
+  color: #333;
+  letter-spacing: -2px;
+  text-align: center;
+  padding-top: 100px;
+}
+.services-about{
+  padding: 0 228px;
+  text-align: center;
+  font-size: 1.1em;
+  color: #696969;
+}
+.services-list{
+  position: relative;
+  margin-top: 66px;
+  padding-top: 258px;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+}
+.services-list li{
+  width: 335px;
+}
+.services-list span{
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 25px;
+}
+.services-list p{
+  text-align: center;
+  color: #696969;
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+.services-list img{
+  position: absolute;
+  top: 0;
+}
+/*블로그 부분*/
+.blog{
+  height: 1295px;
+}
+.blog-heading{
+  font-size: 3.1em;
+  color: #333;
+  letter-spacing: -2px;
+  text-align: center;
+  padding: 102px 0 58px 0;
+}
+.blog-article{
+  width: 560px;
+  display: inline-block;
+  position: relative;
+  padding-top: 340px;
+}
+.blog-article:nth-child(even){
+  padding-right: 14px;
+}
+.post-title{
+  font-size: 2em;
+  font-weight: 600;
+  letter-spacing: -2px;
+}
+.post-category{
+  position: absolute;
+  top: 320px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #03a67b;
+}
+.post-about{
+  font-size: 1.1em;
+  color: #696969;
+  margin-bottom: 46px;
+}
+.blog-article a{
+  text-decoration: none;
+}
+a:link, a:visited{
+  text-decoration: none;
+  color: #333;
+}
+.blog-article img{
+  position: absolute;
+  top: 0;
+}
+.blog-more{
+  width: 235px;
+  height: 50px;
+  color: #fff;
+  background: #03a67b;
+  border-radius: 10px;
+  border: 0;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 46px 452px 0 452px;
+  cursor: pointer;
+}
+/*터치 부분*/
+.touch{
+  height: 705px;
+  position: relative;
+}
+.touch-heading{
+  padding-top: 99px;
+  font-size: 3.1em;
+  color: #333;
+  letter-spacing: -2px;
+  text-align: center;
+}
+.touch-about{
+  color: #696969;
+  padding: 0 228px;
+  text-align: center;
+  margin-bottom: 37px;
+}
+.touch fieldset{
+  padding: 0 188px;
+  margin-bottom: 76px;
+}
+.touch input{
+  text-indent: 15px;
+  border-radius: 5px;
+  background: #e8e8e8;
+  margin-right: 25px;
+}
+.touch input,
+.touch .touch-btn{
+  width: 235px;
+  height: 50px;
+  border: none;
+}
+.touch .touch-btn{
+  background: #03a67b;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.touch-map{
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+
+.footer{
+  height: 250px;
+}
+.footer-logo{
+  margin-top: 60px;
+  padding: 0 539px;
+  margin-bottom: 25px;
+  display: inline-block;
+}
+.footer-about{
+  padding: 0 410px;
+  text-align: center;
+  display: inline-block;
+  font-size: 1.14em;
+  color: #696969;
+  line-height: 1.5;
+}
+.social-list{
+  list-style: none;
+  float: left;
+  padding: 0 480px;
+  margin-top: 22px;
+}
+.social-list li,
+.social-list a{
+  display: inline-block;
+  text-decoration: none;
+}
+.social-list li{
+  width: 20px;
+  height: 18px;
+  padding-left: 5px;
+}
+.social-list a{
+  width: 20px;
+  height: 0px;
+  padding-top: 18px;
+  overflow: hidden;
+  vertical-align: center;
+}
+
+.slack{
+  background: url(../images/social/Slack.png) no-repeat 40% 0;
+}
+.twitter{
+  background: url(../images/social/Twitter.png) no-repeat;
+}
+.facebook{
+  background: url(../images/social/Facebook.png) no-repeat 40% 0;
+}
+.dribbble{
+  background: url(../images/social/Dribbble.png) no-repeat;
+}
+.google{
+  background: url(../images/social/Google-Plus.png) no-repeat;
+}
+.instagram{
+  background: url(../images/social/Instagram.png) no-repeat;
+}

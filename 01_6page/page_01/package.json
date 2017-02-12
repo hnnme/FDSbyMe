@@ -1,0 +1,8 @@
+{
+  "name": "page_01",
+  "version": "0.0.1",
+  "description": "Making website for mini project",
+  "scripts": {
+    "sass": "node-sass -w -r sass/ -o css/ --output-style expanded --source-map-embed"
+  }
+}

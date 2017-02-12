@@ -1,0 +1,122 @@
+@import 'common'
+@import 'mixin'
+@import 'functions'
+@import 'mediaquery'
+@import 'test-grid'
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css)
+
+html
+  font-family: 'Nanum Gothic', sans-serif
+
+body
+  font-size: 16px
+  @extend %reset-element
+
+// 전체 부분
+.wrapper
+  height: 100%
+
+.row::after
+  content: ''
+  display: block
+  clear: both
+
+[class*="col-"]
+  float: left
+  margin-left: 10px
+  margin-right: 10px
+
+//--------------------------
+
+.hidden
+  @extend %hidden
+.skip-navigation
+  @extend %hidden
+
+// 헤더 부분 --------------------
+.header
+  background: $logo-black
+  width: 100%
+  & .header-wrap
+    @extend %reset-space
+  & .main-menu
+    @extend %set-list
+  & a
+    @extend %set-anchor
+  & .heading
+    @extend %reset-element
+    font-size: 24px
+    & a
+      +set-font-size($font-l)
+      color: $logo-strong-pink
+  & .navigation
+    & .main-menu
+      +set-font-size($font-s)
+      @extend %reset-element
+    & li
+      text-align: center
+      // display: block
+      padding: 24px 0
+    & a
+      text-transform: uppercase
+      &:link
+        color: $white
+      &:hover,&:focus
+        color: $menu-hover
+        border: 1px solid $menu-hover
+
+
+// 컨텐트 부분 -------------------
+.contents
+  @extend %reset-space
+  background: $white
+// 메인 비쥬얼 부분
+.visual-list
+  @extend %set-list
+
+// 글이 작품이 되는 공간 부분 ------------------
+.article-space
+  color: $article-font-color
+  & .article-heading
+    +set-font-size($font-l)
+  & .article-list
+    @extend %set-list
+    & strong
+      +set-font-size($font-m)
+    & p
+      +set-font-size($font-s)
+
+// 중간 광고 부분 --------------------
+.advertising-list
+  @extend %set-list
+
+// 작품을 만드는 사람들 -----------------
+.member
+  color: $article-font-color
+  & .member-heading
+    +set-font-size($font-l)
+  & .member-list
+    @extend %set-list
+    & dt
+      +set-font-size($font-m)
+    & dd
+      +set-font-size($font-s)
+
+// 회사 지도 부분 ------------------
+.address-info
+  
+// 작가 문의 폼 부분 ----------------
+.contact-form
+  & .contact-heading
+    +set-font-size($font-l)
+  & .btn-submit
+    +set-font-size($font-m)
+
+// 푸터 부분 -----------------------
+.footer-bg
+  background: $logo-footer
+  & .footer
+    @extend %reset-space
+  & .copyright
+    +set-font-size($font-s)
+    color: $logo-black
