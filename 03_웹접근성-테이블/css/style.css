@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+caption{
+  position: absolute;
+  left: -999em;
+}
+.perform-table{
+  font-family: 'YouandiModernTR' normal;
+  text-align: left;
+  border: none;
+  border-top: 2px solid black;
+}
+.perform-table th{
+  border-bottom: 1px solid silver;
+}
+.perform-table td{
+  border-bottom: 1px solid silver;
+  border-left: 1px solid silver;
+}
+.perform-table td:last-of-type{
+  border-bottom: 0;
+}
