@@ -1,0 +1,52 @@
+
+$white: #ffffff
+
+body
+  background: #144fc1
+
+.input-group
+  position: absolute
+  top: 50%
+  transform: translateX(60%)
+  & label
+    position: absolute
+    left: -999em
+  & #input-todo
+    position: relative
+    border: none
+    width: 600px
+    height: 50px
+    background: rgb(202, 218, 232)
+    border-radius: 10px 0 0 10px
+    font-size: 50px
+    text-indent: 20px
+    &[placeholder]
+      font-size: 20px
+  & .input-btn
+    position: absolute
+    top: 0
+    right: -10%
+    border: 0
+    font-size: 20px
+    background: $white
+    cursor: pointer
+    width: 200px
+    height: 52px
+    border-radius: 0 10px 10px 0
+    border: 1px solid $white
+
+
+.list-group
+  position: absolute
+  width: 700px
+  top: 50%
+  left: 25%
+
+.todolist
+  list-style: none
+  font-size: 40px
+  color: $white
+
+.chkbox_item
+  width: 30px
+  height: 30px
