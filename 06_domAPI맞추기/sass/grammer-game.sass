@@ -1,0 +1,58 @@
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+body
+  margin: 0 auto
+
+
+.wrapper
+  position: relative
+  height: 100vh
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%)
+  font-family: 'Playfair Display', serif
+  color: rgb(32, 46, 88)
+  font-size: 16px
+
+
+.replace-list
+  position: absolute
+  width: 540px
+  display: flex
+  flex-direction: row
+  // transform: translate(80%, 50%)
+  top: 50%
+  left: 50%
+  list-style: none
+  background: #ffffff
+  box-shadow: 10px 10px 20px rgb(73, 80, 130)
+  border-radius: 2px
+  padding: 20px
+
+  & li
+    padding-left: 10px
+    // font-size: 2em
+
+.btn-group
+  display: flex
+  flex-flow: column
+  font-size: 2em
+  position: relative
+  top: 50%
+  left: 20%
+  & button
+    border: 0
+    width: 200px
+    height: 50px
+    background: #ffffff
+
+
+
+
+.active
+  background: rgba(252, 35, 205, 0.54)
+
+
+.second
+  background: rgba(58, 46, 193, 0.54)
