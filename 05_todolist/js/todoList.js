@@ -26,25 +26,28 @@ btnInput.onclick = function(){
 
   chkbox.onclick = function(e){
     var value = e.target.value;
-
     activeCheckbox(value);
   };
-
 };
 
+chkbox.onclick = function(){
+  console.log('click');
+  activeCheckbox();
+};
+// 해보고 싶었던것:
+// 할일을 적고 버튼을 누르면 버튼의 애니메이션이 생기고
+// 다시 원래대로 가는것
 function actButton(){
   // window.setInterval
   console.log('do');
 }
 
-
-function activeCheckbox(value){
+// 할일을 하고 체크를 하면
+function activeCheckbox(){
     var success = document.createTextNode('GOOD!');
     var modal = document.createElement('div');
     modal.setAttribute('class','modal_good');
     modal.appendChild(success);
-    modal.style.cssText = "transform: scale(2,2); font-size:100px";
+  
     document.body.appendChild(modal);
-
-
 }
