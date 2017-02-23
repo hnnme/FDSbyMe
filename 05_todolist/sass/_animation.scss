@@ -1,0 +1,22 @@
+@keyframes good{
+  0%{
+    transform: scale(0, 0);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(5, 5);
+    color: rgb(32, 81, 176);
+    opacity: 0;
+    font-weight: bold;
+  }
+
+  // 20% {
+  //   opacity: 1;
+  //   transform: translate3d(20px, 0, 0);
+  // }
+  //
+  // to {
+  //   opacity: 0;
+  //   transform: translate3d(-2000em, 0, 0);
+  // }
+}
