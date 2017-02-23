@@ -39,7 +39,7 @@ body {
   display: flex;
   flex-flow: column;
   font-size: 2em;
-  position: relative;
+  /*position: relative;*/
   top: 50%;
   left: 20%;
 }
