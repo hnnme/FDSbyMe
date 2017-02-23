@@ -1,52 +1,77 @@
+@import "animation"
 
-$white: #ffffff
 
-body
-  background: #144fc1
+$dark-purple: rgb(53, 57, 87)
 
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+.wrapper
+  position: relative
+  height: 100vh
+
+// [ input요소와 버튼그룹 ]
 .input-group
   position: absolute
-  top: 50%
-  transform: translateX(60%)
+  top: 30%
+  transform: translateX(50%)
+
   & label
     position: absolute
     left: -999em
+
   & #input-todo
     position: relative
-    border: none
-    width: 600px
+    border: 1px solid $dark-purple
+    width: 500px
     height: 50px
-    background: rgb(202, 218, 232)
     border-radius: 10px 0 0 10px
-    font-size: 50px
+    font-size: 20px
     text-indent: 20px
-    &[placeholder]
-      font-size: 20px
+
   & .input-btn
+    color: #ffffff
     position: absolute
     top: 0
-    right: -10%
-    border: 0
-    font-size: 20px
-    background: $white
-    cursor: pointer
+    left: 100%
     width: 200px
-    height: 52px
+    height: 50px
+    font-size: 20px
+    background: $dark-purple
+    cursor: pointer
     border-radius: 0 10px 10px 0
-    border: 1px solid $white
+    border: 1px solid $dark-purple
 
-
+// [ 리스트 그룹 ]
 .list-group
   position: absolute
   width: 700px
+  top: 40%
+  transform: translateX(50%)
+
+  & .todolist
+    list-style: none
+    font-size: 40px
+    color: $dark-purple
+
+  & .chkbox_item
+    width: 30px
+    height: 30px
+
+//[ 애니메이션 ]
+.modal-good
+  position: absolute
   top: 50%
-  left: 25%
+  left: 50%
+  font-size: 20px
+  animation-name: good
+  animation-duration: 0.8s
+  animation-fill-mode: forwards
 
-.todolist
-  list-style: none
-  font-size: 40px
-  color: $white
+  // transition: all 0.7s
 
-.chkbox_item
-  width: 30px
-  height: 30px
+// input[type="checkbox"]:checked + .modal-good
+//   color: rgb(194, 22, 110)
+//   font-weight: bold
